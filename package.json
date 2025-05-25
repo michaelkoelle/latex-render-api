@@ -1,0 +1,45 @@
+{
+  "name": "latex-render-api",
+  "version": "1.0.0",
+  "description": "Rest API for rendering LaTeX documents",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node --files src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "latex",
+    "render",
+    "nodejs",
+    "rest",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelkoelle/latex-render-api.git"
+  },
+  "author": "Michael Koelle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelkoelle/latex-render-api/issues"
+  },
+  "homepage": "https://github.com/michaelkoelle/latex-render-api#readme",
+  "dependencies": {
+    "@fastify/multipart": "^9.0.3",
+    "fastify": "^5.3.3",
+    "node-latex-render": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

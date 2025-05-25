@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Or a newer ECMAScript version
+    "module": "commonjs", // CommonJS for Node.js compatibility by default
+    "lib": ["ES2020"], // Specify library files to be included in the compilation
+    "declaration": true, // Crucial: Generates corresponding '.d.ts' files
+    "outDir": "./dist", // Output directory for compiled JavaScript and .d.ts files
+    "rootDir": "./src", // Specify the root directory of input TypeScript files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true
+    // "moduleResolution": "node", // Default, but good to be aware of
+  },
+  "include": ["src/**/*"], // Which files to compile
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Which files to exclude
+}
